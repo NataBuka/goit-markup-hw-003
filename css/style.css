@@ -110,6 +110,7 @@ img {
 .header-nav {
   margin-top: 32px;
   display: flex;
+  margin-bottom: 32px;
 }
 
 .header {
