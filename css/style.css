@@ -108,9 +108,7 @@ img {
 }
 
 .header-nav {
-  margin-top: 32px;
   display: flex;
-  margin-bottom: 32px;
 }
 
 .header {
@@ -361,6 +359,7 @@ img {
 }
 
 .footer-logo {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -424,8 +423,6 @@ img {
 .filter-img {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: 34px;
 }
 
 .filter-img > .filter-item:not(:nth-child(3n)) {
