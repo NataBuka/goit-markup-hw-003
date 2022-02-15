@@ -86,9 +86,7 @@ img {
 }
 
 .header-logo {
-  margin-top: 24px;
   margin-right: 93px;
-  margin-bottom: 25px;
 }
 
 .footer-brand {
@@ -115,19 +113,13 @@ img {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-left: auto;
-  margin-right: auto;
   border-bottom: 1px solid #ececec;
 }
 
 .container-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -146,8 +138,7 @@ img {
 
 .list-link {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-left: auto;
 }
 
 .header-link {
@@ -168,10 +159,9 @@ img {
   letter-spacing: 0.02em;
 }
 
-.site-nav,
-.team-list,
-.header {
+.site-nav {
   display: flex;
+  align-items: center;
 }
 
 .header-link:hover,
@@ -310,6 +300,9 @@ img {
 }
 
 .team-images {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--wite-color);
   margin-right: 30px;
   flex-basis: calc(100%-4 * 30px) / 4;
@@ -317,7 +310,11 @@ img {
 
 .team-img {
   margin-top: 0px;
-  margin-bottom: 30px;
+}
+
+.team-imagest-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-item {
@@ -339,13 +336,11 @@ img {
 
 /* footer */
 
-.footer-section {
-  background-color: var(--light-black-color);
-  color: var(--wite-color);
-}
-.footer-section {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--light-black-color);
+  color: var(--wite-color);
 }
 
 .footer-link {
@@ -354,6 +349,18 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.footer-list {
+  font-style: normal;
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
 }
 
 .footer-link-map {
@@ -392,13 +399,10 @@ img {
   color: var(--wite-color);
 }
 
-.filter-list .filter-item {
-  margin-bottom: 34px;
-}
-
 .filter-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter-list .filter-item + .filter-item {
@@ -407,6 +411,13 @@ img {
 
 .filter-item {
   background-color: var(--wite-color);
+}
+
+.filter-img-text {
+  padding: 20px 24px;
+  border-left: 1px solid var(--border-line-img);
+  border-bottom: 1px solid var(--border-line-img);
+  border-right: 1px solid var(--border-line-img);
 }
 
 .filter-img {
@@ -426,11 +437,6 @@ img {
 
 .filter-img > .filter-item {
   flex-basis: calc(100%-3 * 30) / 3;
-  border: 1px solid var(--border-line-img);
-  padding-bottom: 20px;
-}
-.filter-images {
-  margin-bottom: 20px;
 }
 
 .button-title {
